@@ -2,11 +2,11 @@ Source: lokkit-chain
 Section: misc
 Priority: optional
 Maintainer: Andreas Schmid, <ikeark@gmail.com>
-Build-Depends: debhelper (>= 7.4.3)
+Build-Depends: debhelper (>= 7.4.3), dh-systemd
 Standards-Version: 3.9.1
 
 Package: lokkit-chain
 Architecture: all
 Section: misc
 Depends: ${misc:Depends}
-Description: lokkit-chain installs geth as a service with the lokkit genesis block
+Description: Installs geth as a service with the lokkit genesis block

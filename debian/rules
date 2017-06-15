@@ -1,13 +1,21 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DH_VERBOSE=1
+# export DH_VERBOSE=1
 
 %:
-	dh $@
+	dh $@ --with=systemd
 
 override_dh_auto_configure:
 	dh_auto_install
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/tmp
+
+override_dh_installinit:
+	dh_systemd_enable -p lokkit-chain
+	dh_installinit -p lokkit-chain
+	dh_systemd_start -p lokkit-chain
+
+override_dh_systemd_start:
+	dh_systemd_start -p lokkit-chain --restart-after-upgrade

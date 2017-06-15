@@ -1,4 +1,4 @@
 #! /usr/bin/dh-exec
 
-opt
-root/.ethereum
+opt/geth
+/home/lokkit/.ethereum
