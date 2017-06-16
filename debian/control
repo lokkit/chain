@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.4.3), dh-systemd
 Standards-Version: 3.9.1
 
 Package: lokkit-chain
-Architecture: all
+Architecture: amd64 armhf
 Section: misc
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, adduser
 Description: Installs geth as a service with the lokkit genesis block
