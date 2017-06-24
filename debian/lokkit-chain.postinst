@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# Fix permissions
-chown -R lokkit /home/lokkit
-
 echo "Initialize with lokkit genesis block under user (lokkit)"
 /opt/geth init /home/lokkit/.ethereum/genesis.json --datadir /home/lokkit/.ethereum
 
+# Fix permissions
+chown -R lokkit /home/lokkit
