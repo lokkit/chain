@@ -18,6 +18,7 @@ dpkg -i ../lokkit-chain_0.0.1_armhf.deb
 * Autostart SystemD service
 * Cleanup lintian logs of debian package
 * Hardcode the follwing enodes
+* Add --lightserv 50 to all to support android light node
 ```
 master: 288b97262895b1c7ec61cf314c2e2004407d0a5dc77566877aad1f2a36659c8b698f4b56fd06c4a0c0bf007b4cfb3e7122d907da3b005fa90e724441902eb19e
 node1: f02412efb55b1f793982223396804921c60ac360e8664522e8beaea718225088e6aa62eae5bba79e4bbfff13b227650dc77e8599b48c1f2290624d21ee2bec41
